@@ -440,7 +440,7 @@
 }
 
 .services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/racecars.avif');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/racecar.avif');
 }
 
 .services h2 {
@@ -635,3 +635,188 @@
     width: 100%;
    } 
 }
+
+/* Winner Section */
+
+.winner {
+  background-color: #141414;
+}
+
+.winner__container {
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    min-height: 90vh;
+    height: auto;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+}
+
+.winner__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.winner__content h2 {
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.winner__content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#winner__img {
+    height: 80%;
+    width: 80%;
+}
+
+/* Mobile Responsive (Champion Section )*/
+
+@media screen and (max-width: 768px) {
+    .winner__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        min-height: auto;
+        height: auto;
+        padding: 3rem 1.5rem;
+    }
+
+    .winner__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .winner__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .winner__content h2 {
+        font-size: 3rem;
+    }
+
+    .winner__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .winner__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .winner__content h2 {
+        font-size: 2rem;
+    }
+
+    .winner__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* Story Section */
+
+.story {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 0;
+    margin-bottom: -15%;
+}
+
+.story h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.story__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 960px) {
+    .story {
+        height: 1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .story {
+        min-height: auto;
+        height: auto;
+        padding: 4rem 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .story {
+        height: 1400px;
+    }
+
+    .story h1 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
